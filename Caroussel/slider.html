@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <!-- Fonctions utilitaires -->
+    <script src="js/utilities.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sliders, les mondes parallèles ;-)</h1>
+        <a id="js-toolbar-toggle" href="#"><i class="fa fa-arrow-down"></i> Barre d'outils</a>
+        <nav class="toolbar">
+            <ul>
+                <li><button id="js-slider-toggle">Démarrer le carousel</button></li>
+                <li><button id="js-slider-random">Afficher une image aléatoire</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider" id="js-slider">
+            <img src="">
+            <p></p>
+            <a class="slider-control" id="js-slider-previous" href="#" title="Image précédente"><i class="fa fa-backward"></i></a>
+            <a class="slider-control" id="js-slider-next" href="#" title="Image suivante"><i class="fa fa-forward"></i></a>
+        </section>
+    </main>
+    <!-- Code principal du carousel -->
+    <script src="js/slider.js"></script>
+</body>
+</html>
