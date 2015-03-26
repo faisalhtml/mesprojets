@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type="text/css" href="css/address-book.css">
+    <!-- Fonctions utilitaires -->
+    <script src="js/utilities.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Carnet d'Adresses</h1>
+
+        <!-- Contenu du carnet d'adresses (liste de contacts) -->
+        <ul id="js-address-book"></ul>
+
+        <!-- Détails d'un contact particulier du carnet d'adresses -->
+        <aside id="js-contact-details"></aside>
+
+        <hr>
+        <nav>
+            <ul class="menu">
+                <li><a id="js-add-contact" href="#">Ajouter un contact</a></li>
+                <li><a id="js-clear-address-book" href="#">Effacer le carnet d'adresses</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Le formulaire de saisie de contact ne s'affiche pas au démarrage -->
+    <form id="js-contact-form" class="hide standard-form">
+        <ul>
+            <li>
+                <label for="title">Civilité :</label>
+                <select id="title" name="title">
+                    <option value="madam">Madame</option>
+                    <option value="miss">Mademoiselle</option>
+                    <option value="mister">Monsieur</option>
+                </select>
+            </li>
+            <li>
+                <label for="lastName">Nom :</label>
+                <input id="lastName" type="text" name="lastName">
+            </li>
+            <li>
+                <label for="firstName">Prénom :</label>
+                <input id="firstName" type="text" name="firstName">
+            </li>
+            <li>
+                <label for="phone">Téléphone :</label>
+                <input id="phone" type="text" name="phone" maxlength="10">
+            </li>
+            <li>
+                <input type="button" id="js-save-contact" value="Enregistrer">
+            </li>
+        </ul>
+    </form>
+
+    <!-- Code principal du carnet d'adresses -->
+    <script src="js/address-book.js"></script>
+</body>
+</html>
