@@ -1,0 +1,79 @@
+html
+{
+	/* Permet de définir la taille d'une case pour pouvoir s'en servir en tant qu'unité de base */
+	font-size : 32px;
+	background : #353c3d;
+}
+
+body
+{
+	margin : 0;
+}
+
+#map
+{
+	background : url('../images/map.png');
+	border : 0.5rem solid #2e3436;
+	border-radius : 0.5rem;
+	/* Centre le terrain dans la fenêtre */
+	position : absolute;
+	top : 0;
+	right : 0;
+	bottom : 0;
+	left : 0;
+	margin : auto;
+}
+
+#character, #coin
+{
+	width : 1rem;
+	height : 1rem;
+	position : absolute;
+	display : none;
+}
+
+#character
+{
+	background : url('../images/character.png') no-repeat;
+	z-index : 2;
+}
+
+#character.left
+{
+	background-position : 0 -1rem;
+}
+
+#character.up
+{
+	background-position : 0 -3rem;
+}
+
+#character.right
+{
+	background-position : 0 -2rem;
+}
+
+#character.down
+{
+	background-position : 0 0;
+}
+
+#coin
+{
+	background : url('../images/coin.png') no-repeat;
+	z-index : 1;
+}
+
+#score
+{
+	position : fixed;
+	right : 0;
+	bottom : 0;
+	background : #555753;
+	color : #d3d7cf;
+	font-family : Monospace;
+	border-top : 0.25rem solid #2e3436;
+	border-left : 0.25rem solid #2e3436;
+	border-radius : 0.25rem 0 0 0;
+	padding : 0.5rem;
+}
