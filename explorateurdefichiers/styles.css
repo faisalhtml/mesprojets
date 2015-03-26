@@ -1,0 +1,27 @@
+*{
+	background-color: #f6c1af;
+}
+ul
+{
+	padding : 0;
+	margin : 0;
+	list-style-type : none;
+}
+
+li
+{
+	background : no-repeat left top;
+	padding-left : 40px;
+	line-height : 32px;
+	margin : 8px 0;
+}
+
+li.dossier
+{
+	background-image : url('dossier.jpeg');
+}
+
+li.fichier
+{
+	background-image : url('fichier.png');
+}
