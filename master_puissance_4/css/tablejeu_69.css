@@ -1,0 +1,33 @@
+#main
+{
+	position:absolute;
+	margin-top:35px;
+}
+#tableau-jeu
+{
+	border:1px solid #782815;
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+}
+#tableau-jeu td
+{
+	cursor:pointer;
+	width:69px;
+	height:69px;
+	background:transparent url(../img/pion_69/fond.png) no-repeat scroll left top;
+}
+#zone-de-tir
+{
+	height:37px;
+	margin-left:9px;
+}
+#zone-de-tir div
+{
+	float:left;
+	height:37px;
+	width:58px;
+	cursor:pointer;
+	margin-right:11px;
+	background:transparent url(../img/pion_69/pion_vide.png) no-repeat scroll left top
+}

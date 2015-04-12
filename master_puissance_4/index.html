@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Master Puissance 4</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta http-equiv="Content-Language" content="fr"/> 
+<meta http-equiv="imagetoolbar" content="no"/>
+<meta name="author" content="Julien Zennaro"/>
+<meta name="description" content="Master Puissance 4 • Batterez-vous le Master?"/>
+<meta name="keywords" lang="fr" content="puissance 4, jouer au puissance 4, puissance4, master puissance 4, jouer au puissance4, jeu puissance 4, jeu puissance4"/>
+<link rel="stylesheet" type="text/css" media="screen" href="css/parametre.css"/>
+<script type="text/javascript" src="jz.js"></script>
+<script type="text/javascript" src="master_puissance_4.js"></script>
+</head>
+<body>
+<form method="post" action="#" id="form_puiss4">
+
+<div id="starter">
+
+	<div class="big_titre">
+		<img alt="Master Puissance 4" src="img/master_puissance4.png"/>
+	</div>
+	<div class="quest_bloc1">
+	
+		<fieldset class="opt_bloc">
+			<legend class="opt_titre">Taille du plateau:</legend>
+					
+			<input class="short_input" type="text" name="ligne" value="6"/>&nbsp;&nbsp;<span>Lignes</span><br/>
+			<input class="short_input" type="text" name="colonne" value="7"/>&nbsp;&nbsp;<span>Colonnes</span><br/>
+		</fieldset>
+		
+		<fieldset class="opt_bloc">
+			<legend class="opt_titre">Type de joueurs:</legend>
+
+			<select class="opt_select" name="joueur1" size="3">
+			<optgroup label="Joueur 1">
+				<option value="1" selected="selected">Humain</option>
+				<option value="2">IA</option>
+			</optgroup>
+			</select>
+			
+			<select class="opt_select" name="joueur2" size="3">
+			<optgroup label="Joueur 2">
+				<option value="1">Humain</option>
+				<option value="2" selected="selected">IA</option>
+			</optgroup>
+			</select>
+			
+		</fieldset>
+	</div>
+
+	<div class="quest_bloc2">
+	
+		<fieldset class="opt_bloc">
+			<legend class="opt_titre">Niveau de difficulté:</legend>
+
+			<select class="opt_select" name="difficulte" size="9">
+			<optgroup label="Facile">
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</optgroup>
+
+			<optgroup label="Moyen">
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</optgroup>
+
+			<optgroup label="Difficile">
+				<option value="5" selected="selected">5</option>
+				<option value="6">6</option>
+			</optgroup>
+			</select>
+		</fieldset>
+	
+		<fieldset class="opt_bloc">
+			<legend class="opt_titre">Niveau d'agressivité:</legend>
+
+				<select class="opt_select" name="agressivite" size="6">
+				<optgroup label="Défensif">
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</optgroup>
+
+				<optgroup label="Agressif">
+					<option value="3" selected="selected">3</option>
+					<option value="4">4</option>
+				</optgroup>
+				</select>
+		</fieldset>
+	</div>
+	
+	<div class="div_sub">
+		<input id="start" class="inp_sub" type="button" name="nom" value="Jouer"/>
+	</div>
+</div>
+
+</form>
+
+<div style="position:absolute; bottom:0px; right:0px; border:1px solid #BFBFBF; width:240px; height:25px; text-align:center; padding-top:10px; color:#000; background-color:#F4F4ED; font-size:12px;">
+Retourner à <a href="http://www.julienzennaro.com">www.julienzennaro.com</a>
+</div>
+</body>
+</html>
